@@ -6,15 +6,19 @@ build-backend = "setuptools.build_meta"
 name = "prevalidador"
 version = "0.1.1"
 description = "Sistema de prevalidación de cargas masivas en Excel basado en reglas JSON y catálogos externos"
-authors = [{ name = "Manuel Aranzazu", email = "tu_email@dominio.com" }]
+authors = [
+    { name = "Pablo Aranzazu", email = "paaranzazuv@github.com" },
+    { name = "David Vasquez (sparveriusdev)", email = "contacto@insumosgeo.com" }
+]
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = ["pandas>=2.0", "openpyxl>=3.1"]
 
 [project.urls]
-Homepage = "https://github.com/tu_usuario/prevalidador"
-Repository = "https://github.com/tu_usuario/prevalidador"
+Homepage = "https://insumosgeo.com"
+Repository = "https://github.com/sparveriusdev/PREVALIDADOR"
+Original = "https://github.com/paaranzazuv/PREVALIDADOR"
 
 [project.scripts]
 prevalidar = "prevalidador.main:main"
@@ -27,4 +31,3 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 prevalidador = ["config/**/*.json", "config/**/*.xlsx", "config/**/*.csv"]
-
